@@ -1,0 +1,28 @@
+id: vibe-coding
+name: Vibe Coding
+description: Dev server, tests, git, and a general shell
+layout:
+  type: grid
+  rows: 2
+  cols: 2
+panes:
+  - id: dev
+    title: Dev Server
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: npm run dev
+  - id: test
+    title: Tests
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: npm test
+  - id: git
+    title: Git
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: git status
+  - id: shell
+    title: Shell
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: ""

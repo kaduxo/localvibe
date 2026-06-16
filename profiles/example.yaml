@@ -1,0 +1,7 @@
+id: example
+name: Example Project
+projectRoot: "{{home}}/projects/my-app"
+templateId: vibe-coding
+overrides:
+  dev:
+    command: pnpm dev

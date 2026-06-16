@@ -1,0 +1,28 @@
+id: monorepo
+name: Monorepo
+description: Three package terminals plus a root shell
+layout:
+  type: grid
+  rows: 2
+  cols: 2
+panes:
+  - id: web
+    title: Web App
+    shell: auto
+    cwd: "{{projectRoot}}/apps/web"
+    command: pnpm dev
+  - id: api
+    title: API
+    shell: auto
+    cwd: "{{projectRoot}}/apps/api"
+    command: pnpm dev
+  - id: packages
+    title: Packages
+    shell: auto
+    cwd: "{{projectRoot}}/packages"
+    command: ""
+  - id: root
+    title: Root
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: ""

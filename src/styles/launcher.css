@@ -1,0 +1,93 @@
+.launcher {
+  min-height: 100%;
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.launcher-header {
+  margin-bottom: 32px;
+}
+
+.launcher-header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.launcher-header p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.launcher-section {
+  margin-bottom: 28px;
+}
+
+.launcher-section h2 {
+  margin: 0 0 14px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.template-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.template-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.template-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.template-card-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.template-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.profile-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-row label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.profile-row select {
+  min-width: 220px;
+}
+
+.project-root-input {
+  flex: 1;
+  min-width: 260px;
+}

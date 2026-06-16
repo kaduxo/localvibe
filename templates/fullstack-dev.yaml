@@ -1,0 +1,32 @@
+id: fullstack-dev
+name: Fullstack Dev
+description: Frontend, API, Docker, and a spare shell
+layout:
+  type: grid
+  rows: 2
+  cols: 2
+panes:
+  - id: frontend
+    title: Frontend
+    shell: auto
+    cwd: "{{projectRoot}}/frontend"
+    command: npm run dev
+    env:
+      PORT: "3000"
+  - id: api
+    title: API
+    shell: auto
+    cwd: "{{projectRoot}}/backend"
+    command: npm run dev
+    env:
+      PORT: "4000"
+  - id: docker
+    title: Docker
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: docker compose up
+  - id: shell
+    title: Shell
+    shell: auto
+    cwd: "{{projectRoot}}"
+    command: ""

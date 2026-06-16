@@ -1,0 +1,83 @@
+.workspace {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.workspace-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  flex-shrink: 0;
+}
+
+.workspace-title {
+  font-weight: 600;
+  flex: 1;
+}
+
+.workspace-grid {
+  flex: 1;
+  min-height: 0;
+}
+
+.panel-group,
+.panel {
+  height: 100%;
+}
+
+.resize-handle {
+  background: var(--border);
+  transition: background 0.15s;
+}
+
+.resize-handle:hover,
+.resize-handle[data-resize-handle-active] {
+  background: var(--accent);
+}
+
+.terminal-pane {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-pane);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.terminal-pane-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.terminal-pane-title {
+  font-weight: 600;
+}
+
+.terminal-pane-status {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.terminal-pane-status.exited {
+  color: var(--danger);
+}
+
+.terminal-pane-body {
+  flex: 1;
+  min-height: 0;
+  padding: 4px;
+}
+
+.terminal-pane-body .xterm {
+  height: 100%;
+}
