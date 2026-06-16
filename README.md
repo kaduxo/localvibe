@@ -2,6 +2,8 @@
 
 Launch pre-configured multi-pane terminal workspaces in one click — built for vibe coding on Windows.
 
+**Repository:** https://github.com/kaduxo/localvibe
+
 Instead of opening multiple CMD windows and arranging them by hand, pick a **template** and get a resizable grid of real shells inside one app window. Each pane can have its own working directory, startup command, shell, and environment variables.
 
 ## Features
